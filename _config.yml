@@ -1,9 +1,9 @@
+title: Titans website
+description: Just a test for now
+author: "TitanPlayz100"
+
 theme: minima
 minima:
   skin: dark
-  social-links:
-  - platform: youtube
-  - user_url: "https://www.youtube.com/@titanplayz100"
-  - title: My youtube!
-author:
-  name: TitanPlayz
+
+show_excerpts: false
