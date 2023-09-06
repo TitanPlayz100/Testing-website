@@ -1,3 +1,9 @@
 theme: minima
 minima:
   skin: dark
+  social-links:
+  - platform: youtube
+  - user_url: "https://www.youtube.com/@titanplayz100"
+  - title: My youtube!
+author:
+  name: TitanPlayz
