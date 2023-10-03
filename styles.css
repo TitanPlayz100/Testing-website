@@ -1,10 +1,17 @@
 body {
     background-color: #373940;
 }
-nav {
-    padding: 1%;
+main {
+    margin-top: 100px;
+}
+#navbar {
+    padding: 2% 20%;
     background-color: #222427; 
-    padding-inline: 15%;
+    transition: 0.4s;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
 }
 .footer {
     padding: 2%;
@@ -21,5 +28,15 @@ nav {
 }
 .box:hover {
     background-color: #141416;
-    
+}
+div {
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateY(40px);
+    transition: all 0.4s;
+}
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0px);
 }
