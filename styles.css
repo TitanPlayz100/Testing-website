@@ -40,3 +40,30 @@ div {
     filter: blur(0px);
     transform: translateY(0px);
 }
+.webbox {
+    background-color: #212325;
+    padding: 20px;
+    border-radius: 25px;
+    height:auto;
+    width:48%;
+    margin:1%;
+    transition: 0.3s;
+    position: relative;
+    transition: all 0.4s;
+    float: left;
+}
+.webbox:hover {
+    background-color: #121314;
+}
+.webtext,.webtext_small {
+    text-decoration: none;
+    font-size: x-large;
+    color:#e6e6e6;
+}
+.webtext_small {
+    font-size:large;
+}
+.webbox_parent {
+    width: 100%;
+    overflow: hidden;
+}
