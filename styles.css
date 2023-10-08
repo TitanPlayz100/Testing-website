@@ -7,7 +7,7 @@ main {
 #navbar {
     padding: 2% 20%;
     background-color: #222427; 
-    transition: 0.4s;
+    transition: all 0.4s ease;
     width: 100%;
     position: fixed;
     top: 0;
@@ -33,7 +33,7 @@ div {
     opacity: 0;
     filter: blur(4px);
     transform: translateY(40px);
-    transition: all 0.4s;
+    transition: all 0.4s ease;
 }
 .show {
     opacity: 1;
