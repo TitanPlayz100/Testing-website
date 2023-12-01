@@ -1,3 +1,5 @@
+
+// adds blur to scrolling
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry);
@@ -15,6 +17,7 @@ hiddenElements.forEach((el) => {
     observer.observe(el);
 });
 
+// minimises top navbar on scroll
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
