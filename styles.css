@@ -55,6 +55,9 @@ div {
 .webbox:hover {
     background-color: #121314;
 }
+.channelbox:hover {
+    background-color: #121314;
+}
 .webtext,.webtext_small {
     text-decoration: none;
     font-size: x-large;
@@ -66,4 +69,36 @@ div {
 .webbox_parent {
     width: 100%;
     overflow: hidden;
+}
+.channelbox {
+    background-color: #212325;
+    padding: 20px;
+    border-radius: 25px;
+    height:auto;
+    width:100%;
+    margin:1%;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+.channelname {
+    font-size:x-large;
+    font-weight: bolder;
+    color: #ffffff;
+    margin: 0%;
+}
+.channeldescription {
+    font-size:medium;
+    color: #ffffff80;
+    margin: 0%;
+}
+#myInput {
+    background-color: #212325;
+    padding: 15px;
+    border-radius: 15px;
+    height:auto;
+    width:90%;
+    margin:1%;
 }
