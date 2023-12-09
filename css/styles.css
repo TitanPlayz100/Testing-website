@@ -1,0 +1,67 @@
+body {
+    background-color: #373940;
+}
+main {
+    margin-top: 100px;
+}
+.navbar {
+    padding: 2% 20%;
+    background-color: #222427; 
+    transition: all 0.4s ease;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+.navimg {
+    height: auto; 
+    width: 60px;
+}
+.footer {
+    padding: 2%;
+    background-color: #222427; 
+}
+
+/* blur and move on load */
+div {
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateY(40px);
+    transition: all 0.4s ease;
+}
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0px);
+}
+
+/* boxes with content */
+.webbox_parent {
+    width: 110%;
+    overflow: hidden;
+    transform: translateX(-5%);
+}
+.webbox {
+    background-color: #212325;
+    padding: 20px;
+    border-radius: 25px;
+    height:auto;
+    width:48%;
+    margin:1%;
+    transition: 0.3s;
+    position: relative;
+    transition: all 0.4s;
+    float: left;
+}
+.webbox:hover {
+    background-color: #121314;
+}
+
+.webtext,.webtext_small {
+    text-decoration: none;
+    font-size: x-large;
+    color:#e6e6e6;
+}
+.webtext_small {
+    font-size:large;
+}

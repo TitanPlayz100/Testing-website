@@ -6,6 +6,14 @@ function truncateString(str, maxLength) {
     }
 }
 
+
+/* <div href="(channel link)" class="channelbox">
+<p class="channelname">name></p>
+<p class="channeldescription">desc</p>
+</div> 
+
+This is the template for each element */
+     
 async function loadData() {
     try {
         // Fetch the JSON file

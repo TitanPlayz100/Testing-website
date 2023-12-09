@@ -1,0 +1,49 @@
+.channelbox {
+    background-color: #212325;
+    padding: 20px;
+    border-radius: 25px;
+    height:auto;
+    width:90%;
+    margin:1%;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+    transform: translateX(0px);
+}
+.channelbox:hover {
+    background-color: #121314;
+}
+.visible {
+    opacity: 1;
+    transform: translateX(50px);
+}
+.hidden {
+    opacity: 0;
+    transform: translateX(0px);
+    transition: all 0.25;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+.channelname {
+    font-size:x-large;
+    font-weight: bolder;
+    color: #ffffff;
+    margin: 0%;
+}
+.channeldescription {
+    font-size:medium;
+    color: #ffffff80;
+    margin: 0%;
+}
+#myInput {
+    background-color: #212325;
+    padding: 15px;
+    border-radius: 15px;
+    height:auto;
+    width:90%;
+    margin:1%;
+}

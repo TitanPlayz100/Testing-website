@@ -1,57 +1,23 @@
 <!doctype html>
-
 <head>
+  <base href=".">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/channellist.css">
   <link rel="shortcut icon" href="assets/logo.png">
-  <title>Resources - TitanPlayz</title>
-  <script defer src="channels.js"></script>
-  <script defer src="app.js"></script>
+  <title>Channels - TitanPlayz</title>
+  <script defer src="scripts/channels.js"></script>
+  <script defer src="scripts/app.js"></script>
 </head>
-
 <body>
-  <nav id="navbar">
-    <ul>
-      <li><img src="assets/logo.png" style="height: auto; width: 60px;"></li>
-      <li><strong><a style="font-size: xx-large; color: white;" href="https://titanplayz100.github.io/">TitanPlayz's
-            Website</a></strong></li>
-    </ul>
-    <ul>
-      <li><a href="https://youtube.com/@titanplayz100" role="button" class="contrast outline">Youtube</a>
-      <li><a href="about-me.html" role="button" class=" contrast outline">About Me</a>
-      <li><a href="index.html" role="button" class="contrast">Home Page</a>
-    </ul>
-  </nav>
-
-  <main class="container">
+  <main class="container"><div>
     <h1>CHANNELS</h1>
-    
     <p>Have a look through all these great channels, most who post tetris content just like me!<br>DM me if u don't see a channel u wanted</p>
-    
     <center><input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search for channels.."></center>
-
     <hr>
-
-
-    <p class="webbox_parent" id="channel-container">
-      <!-- <div href=" google.com" class="channelbox">
-        <p class="channelname">test</p>
-        <p class="channeldescription">test</p>
-      </div> 
-    
-      This is the template for each element
-     -->
-   
-    </p>
-  </main>
-
-  <div class="footer">
-    <center>
-      <a href="#top" role="button" class="secondary outline">Back to top</a>
-    </center>
-  </div>
+    <p class="webbox_parent" id="channel-container"></p>
+  </div></main>
 </body>
-
 </html>

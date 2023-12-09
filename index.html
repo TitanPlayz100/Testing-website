@@ -1,79 +1,76 @@
 <!doctype html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <link rel="shortcut icon" href="assets/logo.png">
-    <title>Home - TitanPlayz</title>
-    <script defer src="app.js"></script>
-  </head>
-  <body>
-    <nav id="navbar">
-      <ul>
-        <li><img src="assets/logo.png" style="height: auto; width: 60px;"></li>
-        <li><strong><a style="font-size: xx-large; color: white;" href="https://titanplayz100.github.io/">TitanPlayz's Website</a></strong></li>
-      </ul>
-      <ul>
-        <li><a href="https://youtube.com/@titanplayz100" role="button" class="contrast outline">Youtube</a>
-        <li><a href="about-me.html" role="button" class=" contrast outline">About Me</a>
-        <li><a href="index.html" role="button" class="contrast">Home Page</a>
-      </ul>
-    </nav>
 
-    <main class="container">
-      <h1 style="text-align: center;">Hi! I'm TitanPlayz</h1>
-      <h4 style="text-align: center; padding-bottom: 5%;">Welcome To My Website!</h4>
-      <hr>
-      <div class="grid">
-        <a href="./guides-list.html" class="contrast" style="text-decoration: none;"><div class="box">
-          <img src="./assets/sdpc.png" style="height: auto; width: 250px;">
-          <p style="font-size: xx-large;"><strong>GUIDES</strong></p>
-          <p>Explore the videos and guides I have made</p>
-        </div></a>
-        <a href="./resources-list.html" class="contrast" style="text-decoration: none;"><div class="box">
-          <img src="./assets/resource-collection.png" style="height: auto; width: 350px;">
-          <p style="font-size: xx-large;"><strong>RESOURCES</strong></p>
+<head>
+  <base href=".">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/indexcss.css">
+  <link rel="shortcut icon" href="assets/logo.png">
+  <title>Home - TitanPlayz</title>
+  <script defer src="scripts/app.js"></script>
+</head>
+
+<body>
+  <main class="container">
+    <h1>Hi! I'm TitanPlayz</h1>
+    <h4>Welcome To My Website!</h4>
+    <hr>
+    <div class="grid">
+      <a href="guides-list.html" class="contrast">
+        <div class="box">
+          <img src="assets/sdpc.png" id="img1">
+          <p><strong>GUIDES</strong></p>
+          <p>UPDATED - Explore the videos and guides I have made</p>
+        </div>
+      </a>
+      <a href="resources-list.html" class="contrast">
+        <div class="box">
+          <img src="assets/resource-collection.png" id="img2">
+          <p><strong>RESOURCES</strong></p>
           <p>List of many tetris related resources to aid all players</p>
-        </div></a>
-        <a href="./about-me.html" class="contrast" style="text-decoration: none;"><div class="box">
-          <img src="./assets/logo.png" style="height: auto; width: 180px;">
-          <p style="font-size: xx-large;"><strong>ABOUT ME</strong></p>
+        </div>
+      </a>
+      <a href="about-me.html" class="contrast">
+        <div class="box">
+          <img src="assets/logo.png" id="img3">
+          <p><strong>ABOUT ME</strong></p>
           <p>View my accomplishments and projects</p>
-        </div></a>
-      </div>
-      <div style="height: 60px; width: 100%; height: auto;">
-        <h1 style="text-align: center;"><br>*<hr><br>OTHER COOL PLACES</h1>
-      </div>
-      <div class="grid">
-        <a href="./dc-servers-list.html" class="contrast" style="text-decoration: none;"><div class="box">
-          <img src="./assets/discord.png" style="height: auto; width: 170px; padding: 20px">
-          <p style="font-size: xx-large;"><strong>DC SERVERS</strong></p>
-          <p>Cool places to hang out</p>
-        </div></a>
-        <a href="https://github.com/TitanPlayz100" class="contrast" style="text-decoration: none;"><div class="box">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1200px-GitHub_Invertocat_Logo.svg.png" style="height: auto; width: 170px; padding: 25px">
-          <p style="font-size: xx-large;"><strong>GITHUB</strong></p>
-          <p>My github, check out skyclash</p>
-        </div></a>
-        <a href="./channel-list.html" class="contrast" style="text-decoration: none;"><div class="box">
-          <img src="./assets/default user.png" style="height: auto; width: 175px; padding: 10px">
-          <p style="font-size: xx-large;"><strong>OTHER CHANNELS</strong></p>
-          <p>UPDATED - A list of other cool people on YT!</p>
-        </div></a>
-      </div>
-
-      <div style="height: 60px; width: 100%; height: auto;">
-        <h1 style="text-align: center;"><br>*</h1>
-        <h6 style="text-align: center;"><hr><br>You can contact me here:<br> Discord: titanplayz<br>Comments on YT<br></h6>
-      </div>
-    </main>
-
-    <div class="footer">
-      <center>
-        <a href="#top" role="button" class="secondary outline">Back to top</a>
-      </center>
+        </div>
+      </a>
     </div>
-    </main>
-  </body>
+    <div class="headerdiv">
+      <h1><br>*<hr><br>OTHER COOL PLACES</h1>
+    </div>
+    <div class="grid">
+      <a href="dc-servers-list.html" class="contrast">
+        <div class="box">
+          <img src="assets/discord.png" id="img4">
+          <p><strong>DC SERVERS</strong></p>
+          <p>Cool places to hang out</p>
+        </div>
+      </a>
+      <a href="https://github.com/TitanPlayz100" class="contrast">
+        <div class="box">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1200px-GitHub_Invertocat_Logo.svg.png" id="img5">
+          <p><strong>GITHUB</strong></p>
+          <p>My github, check out skyclash</p>
+        </div>
+      </a>
+      <a href="channel-list.html" class="contrast">
+        <div class="box">
+          <img src="assets/default user.png" id="img6">
+          <p><strong>OTHER CHANNELS</strong></p>
+          <p>UPDATED - A list of other cool people on YT!</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="headerdiv">
+      <br><h1>*</h1><hr><h6>You can contact me here:<br> Discord: titanplayz<br>Comments on YT</h6>
+    </div>
+  </main>
+</body>
 </html>

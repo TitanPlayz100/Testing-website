@@ -1,64 +1,60 @@
 <!doctype html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <link rel="shortcut icon" href="assets/logo.png">
-    <title>Template - TitanPlayz</title>
-    <script defer src="app.js"></script>
-  </head>
-  <body>
-    <nav  id="navbar">
-      <ul>
-        <li><img src="assets/logo.png" style="height: auto; width: 60px;"></li>
-        <li><strong><a style="font-size: xx-large; color: white;" href="https://titanplayz100.github.io/">TitanPlayz's Website</a></strong></li>
-      </ul>
-      <ul>
-        <li><a href="https://youtube.com/@titanplayz100" role="button" class="contrast outline">Youtube</a>
-        <li><a href="about-me.html" role="button" class=" contrast outline">About Me</a>
-        <li><a href="index.html" role="button" class="contrast">Home Page</a>
-      </ul>
-    </nav>
 
-    <main class="container">
-      <h2>My Guides or Transcriptions</h2>
+<head>
+  <base href=".">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/ytvideos.css">
+  <link rel="shortcut icon" href="assets/logo.png">
+  <title>Guides - TitanPlayz</title>
+  <script defer src="scripts/app.js"></script>
+</head>
 
-      <div class="webbox_parent">
-        <a href="guides/Opener Guide.html" class="webtext">
-          <div class="webbox">
-            <p class="webtext"><strong>Opener guide</strong></p>
-            <p class="webtext_small">Short guide to find the perfect opener</p>
-          </div>
-        </a>
-        <a href="guides/PC tutorial.html" class="webtext">
-          <div class="webbox">
-            <p class="webtext"><strong>INCOMPLETE - PC guide </strong></p>
-            <p class="webtext_small">Transcription of PC guides found on youtube</p>
-          </div>
-        </a>
-      </div>
+<body>
+  <main class="container">
+    <h1>Guides and Transcriptions</h1>
 
-      <div class="webbox_parent">
-        <a href="guides/Tetris Dictionary.html" class="webtext">
-          <div class="webbox">
-            <p class="webtext"><strong>Tetris Dictionary</strong></p>
-            <p class="webtext_small">Everything needed about modern tetris terms</p>
-          </div>
-        </a>
-        <a href="guides/TKI tutorial.html" class="webtext">
-          <div class="webbox">
-            <p class="webtext"><strong>TKI tutorial</strong></p>
-            <p class="webtext_small">Transcription of the TKI tutorial video</p>
-          </div>
-        </a>
-      </div>
-    </main>
+    <h2>Transcriptions</h2>
 
-    <div class="footer">
-      <center>
-        <a href="#top" role="button" class="secondary outline">Back to top</a>
-      </center>
+    <div class="webbox_parent">
+      <a href="guides/Opener Guide.html" class="webtext">
+        <div class="webbox">
+          <p class="webtext"><strong>Opener guide</strong></p>
+          <p class="webtext_small">Short guide to find the perfect opener</p>
+        </div>
+      </a>
+      <a href="guides/PC tutorial.html" class="webtext">
+        <div class="webbox">
+          <p class="webtext"><strong>INCOMPLETE - PC guide </strong></p>
+          <p class="webtext_small">Transcription of PC guides found on youtube</p>
+        </div>
+      </a>
     </div>
-  </body>
+
+    <div class="webbox_parent">
+      <a href="guides/Tetris Dictionary.html" class="webtext">
+        <div class="webbox">
+          <p class="webtext"><strong>Tetris Dictionary</strong></p>
+          <p class="webtext_small">Everything needed about modern tetris terms</p>
+        </div>
+      </a>
+      <a href="guides/TKI tutorial.html" class="webtext">
+        <div class="webbox">
+          <p class="webtext"><strong>TKI tutorial</strong></p>
+          <p class="webtext_small">Transcription of the TKI tutorial video</p>
+        </div>
+      </a>
+    </div>
+
+    <br>
+    <hr><br>
+    <h2>Videos</h2>
+
+<!-- https://yvoschaap.com/youtube.html -->
+    <div id="ytThumbs"></div>
+    <script defer src="./scripts/playlist.js"></script>
+  </main>
+</body>
 </html>
