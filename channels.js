@@ -35,6 +35,8 @@ async function loadData() {
             link.appendChild(description);
 
             container.appendChild(link);
+
+            addblur();
         });
     } catch (error) {
         console.error('Error loading JSON data:', error);
@@ -42,21 +44,42 @@ async function loadData() {
 }
 
 function searchFunction() {
-    var input, filter, channels, a, i, txtValue;
+    var input, filter, channels, a, i, txtValue, channelsnames, channelsdesc;
     input = document.getElementById('myInput');
     filter = input.value.toUpperCase();
     channels = document.querySelectorAll(".channelbox");
+    channelsnames = document.querySelectorAll(".channelname");
+    channelsdesc = document.querySelectorAll(".channeldescription");
 
     // Loop through all list items, and hide those who don't match the search query
     for (i = 0; i < channels.length; i++) {
         a = channels[i].getElementsByTagName("p")[0];
         txtValue = a.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            channels[i].style.display = "";
+            channels[i].classList.remove('hidden');            
         } else {
-            channels[i].style.display = "none";
+            channels[i].classList.add('hidden');
         }
     }
-}  
+}
 
 window.onload = loadData;
+
+const observer2 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        } else {
+            entry.target.classList.remove('visible');
+        }
+    });
+});
+
+function addblur() {
+    // adds blur to scrolling
+    const hiddenElements2 = document.querySelectorAll('.channelbox');
+
+    hiddenElements2.forEach((el) => {
+        observer2.observe(el);
+    });
+}
