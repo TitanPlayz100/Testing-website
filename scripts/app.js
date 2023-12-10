@@ -21,9 +21,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
-    document.getElementById("navbar").style.padding = "0% 10%";
+    document.getElementsByClassName("navbar")[0].style.padding = "0% 10%";
   } else {
-    document.getElementById("navbar").style.padding = "2% 20%";
+    document.getElementsByClassName("navbar")[0].style.padding = "2% 20%";
   }
 }
 
