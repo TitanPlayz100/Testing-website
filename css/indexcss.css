@@ -1,28 +1,28 @@
 a {text-decoration: none;}
 img {height: auto;}
 h1, h4, h6 {text-align: center;}
-h4 {padding-bottom: 5%;}
-strong {font-size: xx-large;}
+h4 {padding-bottom: 5vw;}
+strong {font-size: 2.1vw;}
 .box {
     background-image: linear-gradient(#212325, #ffffff00);
-    padding: 5%;
-    border-radius: 10%;
-    height:360px;
-    width:360px;
+    padding: 2vw;
+    border-radius: 3vw;
+    height:24vw;
+    width:24vw;
     text-align: center;
     transition: 0.3s;
+    margin: 1vw;
 }
 .box:hover {
     background-color: #141416;
 }
-.headerdiv {
-    height: 60px; 
-    width: 100%; 
+.headerdiv { 
+    width: auto;
     height: auto;
 }
-#img1 {height: auto; width: 250px;}
-#img2 {height: auto; width: 350px;}
-#img3 {height: auto; width: 180px;}
-#img4 {height: auto; width: 170px; padding: 20px;}
-#img5 {height: auto; width: 170px; padding: 25px;}
-#img6 {height: auto; width: 175px; padding: 10px;}
+#img1 {height: auto; width: 13vw;}
+#img2 {height: auto; width: 18vw;}
+#img3 {height: auto; width: 9vw;}
+#img4 {height: auto; width: 8vw; padding: 1vw;}
+#img5 {height: auto; width: 8vw; padding: 2vw;}
+#img6 {height: auto; width: 8vw; padding: 1vw;}

@@ -1,50 +1,65 @@
+/* TODO: change text to viewport size */
 body {
     background-color: #373940;
 }
 main {
-    margin-top: 100px;
+    margin-top: 10vw;
 }
+
+/* navbar and footer css */
 .navbar {
-    padding: 2% 20%;
+    padding: 2vw 20vw;
     background-color: #222427; 
     transition: all 0.4s ease;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     top: 0;
     z-index: 99;
 }
 .navimg {
     height: auto; 
-    width: 60px;
+    width: 4vw;
+}
+.navtext {
+    font-size: 2.5vw; 
+    color: white;
 }
 .footer {
-    padding: 2%;
+    padding: 2vw;
     background-color: #222427; 
 }
+.contrast {
+    font-size: 1.3vw;
+}
+
+/* responsive text */
+p {font-size: 1.3vw;}
+h1 {font-size: 3vw;}
+h2 {font-size: 2.4vw;}
 
 /* blur and move on load */
 div {
     opacity: 0;
     filter: blur(4px);
-    transform: translateY(40px);
+    transform: translateY(3vw);
     transition: all 0.4s ease;
 }
 .show {
     opacity: 1;
-    filter: blur(0px);
-    transform: translateY(0px);
+    filter: blur(0);
+    transform: translateY(0);
 }
 
 /* boxes with content */
 .webbox_parent {
     width: 110%;
     overflow: hidden;
-    transform: translateX(-5%);
+    transform: translateX(-5vw);
 }
 .webbox {
     background-color: #212325;
-    padding: 20px;
-    border-radius: 25px;
+    padding: 1.5vw;
+    border-radius: 2vw;
     height:auto;
     width:48%;
     margin:1%;
@@ -59,9 +74,9 @@ div {
 
 .webtext,.webtext_small {
     text-decoration: none;
-    font-size: x-large;
+    font-size: 1.8vw;
     color:#e6e6e6;
 }
 .webtext_small {
-    font-size:large;
+    font-size:1.2vw;
 }
