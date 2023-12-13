@@ -1,10 +1,17 @@
-/* TODO: change text to viewport size */
 body {
     background-color: #373940;
+    padding-top: 10vw;
 }
-main {
-    margin-top: 10vw;
+
+@media screen and (max-width: 1000px) {
+    main {
+        margin-top: 15vw;
+    }
+    .hide_on_mobile {
+        display: none;
+    }
 }
+
 
 /* navbar and footer css */
 .navbar {
@@ -19,10 +26,12 @@ main {
 .navimg {
     height: auto; 
     width: 4vw;
+    transition: all 0.4s ease;
 }
 .navtext {
     font-size: 2.5vw; 
     color: white;
+    transition: all 0.4s ease;
 }
 .footer {
     padding: 2vw;
@@ -32,10 +41,16 @@ main {
     font-size: 1.3vw;
 }
 
-/* responsive text */
-p {font-size: 1.3vw;}
-h1 {font-size: 3vw;}
-h2 {font-size: 2.4vw;}
+@media screen and (max-width:1000px) {
+    .navimg {
+        width: 6.5vw;
+        margin: 0 auto;
+    }
+    .navtext {
+        font-size: 5vw;
+    }
+    
+}
 
 /* blur and move on load */
 div {
