@@ -48,8 +48,7 @@ body {
     }
     .navtext {
         font-size: 5vw;
-    }
-    
+    }    
 }
 
 /* blur and move on load */
@@ -66,15 +65,26 @@ div {
 }
 
 /* boxes with content */
-.webbox_parent {
+.webbox_parent, .webbox_parent_yt {
     width: 110%;
     overflow: hidden;
-    transform: translateX(-5vw);
+    transform: translateX(-4%);
 }
+
+@media screen and (max-width:1000px) {
+    .webbox_parent_yt {
+        transform: translateX(-10%);
+    }
+    .webbox_parent {
+        margin: 1vw;
+        width: 100%
+    }
+}
+
 .webbox {
     background-color: #212325;
     padding: 1.5vw;
-    border-radius: 2vw;
+    border-radius: 20px;
     height:auto;
     width:48%;
     margin:1%;
@@ -89,9 +99,23 @@ div {
 
 .webtext,.webtext_small {
     text-decoration: none;
-    font-size: 1.8vw;
+    font-size: 27px;
     color:#e6e6e6;
 }
 .webtext_small {
     font-size:1.2vw;
+}
+
+@media screen and (max-width:1000px) {
+    .webtext_small {
+        display: none;
+    }
+
+    .webbox {
+        width: 90%;
+        margin: 10px;
+        padding: 15px;
+        text-align: center;
+        border-radius: 15px;
+    }
 }
