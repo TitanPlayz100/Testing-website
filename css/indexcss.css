@@ -16,6 +16,13 @@ strong {font-size: 2.1vw;}
 .box:hover {
     background-color: #141416;
 }
+.grid > a:focus {
+    background-color: #00000000;
+}
+.box > img {
+    -webkit-user-drag:none;
+}
+
 .headerdiv { 
     width: auto;
     height: auto;
