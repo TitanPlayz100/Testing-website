@@ -3,6 +3,7 @@ img {height: auto;}
 h1, h4, h6 {text-align: center;}
 h4 {padding-bottom: 5vw;}
 strong {font-size: 2.1vw;}
+
 .box {
     background-image: linear-gradient(#212325, #ffffff00);
     padding: 2vw;

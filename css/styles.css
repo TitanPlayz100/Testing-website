@@ -67,6 +67,7 @@ div {
 /* boxes with content */
 .webbox_parent, .webbox_parent_yt {
     width: 110%;
+    height: fit-content;
     overflow: hidden;
     transform: translateX(-4%);
 }

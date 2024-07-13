@@ -1,4 +1,5 @@
 <!doctype html>
+
 <head>
   <base href=".">
   <meta charset="utf-8">
@@ -8,16 +9,57 @@
   <link rel="stylesheet" href="css/channellist.css">
   <link rel="shortcut icon" href="assets/logo.png">
   <title>Channels - TitanPlayz</title>
-  <script defer src="scripts/channels.js"></script>
   <script defer src="scripts/app.js"></script>
 </head>
+
+<script type="module">
+  import { createApp, reactive } from 'https://unpkg.com/petite-vue?module'
+  import ChannelData from './channel_list/subscriptions.json' with { type: "json" };
+
+  const cdata = reactive(ChannelData)
+
+  const intersection = new IntersectionObserver(entries =>
+    entries.forEach(entry =>
+      entry.isIntersecting
+        ? entry.target.classList.add('visible')
+        : entry.target.classList.remove('visible')
+    )
+  );
+
+  function ChannelBox(props) {
+    return {
+      $template: '#channel-template',
+      data: props.data,
+    }
+  }
+
+  createApp({ cdata, ChannelBox, filter: '', intersection }).mount()
+</script>
+
+<template id="channel-template">
+  <a :href="data.link" class="channelbox" @vue:mounted="intersection.observe($el); $el.classList.remove('visible')"
+    :class="data.name.includes(filter) ? 'visible':'hidden' ">
+    <div style="display: flex; align-items: center; gap: 1vw; padding: 0.5vmin; width: 100%;" class="show">
+      <img class="channelimg" :src="data.pfp" style="height: 5vh; border-radius: 3vh;" />
+      <p class="channelname">{{data.name}}</p>
+    </div>
+    <p class="channeldescription" style="margin-left: 4vw;">{{data.desc}}</p>
+  </a>
+</template>
+
 <body>
-  <main class="container"><div>
-    <h1>CHANNELS</h1>
-    <p>Have a look through all these great channels, most who post tetris content just like me!<br>DM me if u don't see a channel u wanted</p>
-    <center><input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search for channels.."></center>
-    <hr>
-    <p class="webbox_parent_yt" id="channel-container"></p>
-  </div></main>
+  <main class="container">
+    <div>
+      <h1>CHANNELS</h1>
+      <p>Have a look through all these great channels, most who post tetris content just like me!<br>DM me if u don't
+        see a channel u wanted</p>
+      <input type="text" v-scope v-model="filter" id="myInput" placeholder="Search for channels..">
+      <hr>
+    </div>
+    <div class="webbox_parent_yt" id="channel-container">
+      <div v-scope="ChannelBox({ data: channel })" v-for="(channel, index) in cdata" :key="index" class="show"></div>
+    </div>
+  </main>
 </body>
+
 </html>
