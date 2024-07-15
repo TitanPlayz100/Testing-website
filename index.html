@@ -2,9 +2,6 @@
 
 <!-- https://zerodevx.github.io/zero-md/ - markdown to html converter-->
 <!-- https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.green.min.css" - green picocss -->
-<!-- 'https://unpkg.com/petite-vue?module' petite vue -->
-
-
 
 <head>
   <base href=".">
@@ -19,67 +16,63 @@
   <script defer src="scripts/app.js"></script>
 </head>
 
+<script type="module">
+  import { createApp } from 'https://unpkg.com/petite-vue?module'
+
+  const box_data = [
+    { title: 'GUIDES', description: 'Explore the videos and guides I have made', link: 'guides-list.html', image: 'assets/sdpc.png', imgid: 'img1' },
+    { title: 'RESOURCES', description: 'Many tetris resources', link: 'resources-list.html', image: 'assets/resource-collection.png', imgid: 'img2' },
+    { title: 'ABOUT ME', description: 'View my accomplishments and projects', link: 'about-me.html', image: 'assets/logo.png', imgid: 'img3' },
+    { title: 'DC SERVERS', description: 'Cool places to hang out', link: 'dc-servers-list.html', image: 'assets/discord.png', imgid: 'img4' },
+    { title: 'GITHUB', description: 'View my github profile', link: 'https://github.com/TitanPlayz100', image: 'assets/github.png', imgid: 'img5' },
+    { title: 'OTHER CHANNELS', description: 'A list of cool people on YT', link: 'channel-list.html', image: 'assets/default user.png', imgid: 'img6' },
+  ]
+
+  function Box(props) {
+    return { $template: '#box-template', data: props }
+  }
+
+  createApp({ Box, box_data }).mount()
+</script>
+
+<template id="box-template">
+  <a :href="data.link" class="contrast">
+    <div class="box" @vue:mounted="observer.observe($el)">
+      <img :src="data.image" :id="data.imgid">
+      <p><strong>{{data.title}}</strong></p>
+      <p>{{data.description}}</p>
+    </div>
+  </a>
+</template>
+
 <body>
-  <main class="container">
+  <main class="container centered">
     <h1>Hi! I'm TitanPlayz</h1>
     <h4>Welcome To My Website!</h4>
-    <hr>
-    <center>
-    <div class="grid">
-      <a href="guides-list.html" class="contrast">
-        <div class="box">
-          <img src="assets/sdpc.png" id="img1">
-          <p><strong>GUIDES</strong></p>
-          <p>UPDATED - Explore the videos and guides I have made</p>
-        </div>
-      </a>
-      <a href="resources-list.html" class="contrast">
-        <div class="box">
-          <img src="assets/resource-collection.png" id="img2">
-          <p><strong>RESOURCES</strong></p>
-          <p>List of many tetris related resources to aid all players</p>
-        </div>
-      </a>
-      <a href="about-me.html" class="contrast">
-        <div class="box">
-          <img src="assets/logo.png" id="img3">
-          <p><strong>ABOUT ME</strong></p>
-          <p>View my accomplishments and projects</p>
-        </div>
-      </a>
+
+    <div class="grid" style="width: 80vw;">
+      <div v-scope="Box(box_data[0])"></div>
+      <div v-scope="Box(box_data[1])"></div>
+      <div v-scope="Box(box_data[2])"></div>
     </div>
-    <div class="headerdiv">
-      <h1><br>*<hr><br>OTHER COOL PLACES</h1>
-    </div>
-    <div class="grid">
-      <a href="dc-servers-list.html" class="contrast">
-        <div class="box">
-          <img src="assets/discord.png" id="img4">
-          <p><strong>DC SERVERS</strong></p>
-          <p>Cool places to hang out</p>
-        </div>
-      </a>
-      <a href="https://github.com/TitanPlayz100" class="contrast">
-        <div class="box">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1200px-GitHub_Invertocat_Logo.svg.png" id="img5">
-          <p><strong>GITHUB</strong></p>
-          <p>My github, check out skyclash</p>
-        </div>
-      </a>
-      <a href="channel-list.html" class="contrast">
-        <div class="box">
-          <img src="assets/default user.png" id="img6">
-          <p><strong>OTHER CHANNELS</strong></p>
-          <p>UPDATED - A list of other cool people on YT!</p>
-        </div>
-      </a>
-    </div>
-    </center>
 
     <div class="headerdiv">
-      <br><h1>*</h1><hr><h6>You can contact me here:<br> Discord: titanplayz<br>Comments on YT</h6>
+      <h1>*</h1>
+      <h1>OTHER COOL PLACES</h1>
+    </div>
+
+    <div class="grid" style="width: 80vw;">
+      <div v-scope="Box(box_data[3])"></div>
+      <div v-scope="Box(box_data[4])"></div>
+      <div v-scope="Box(box_data[5])"></div>
+    </div>
+
+    <div class="headerdiv">
+      <br>
+      <h1>*</h1>
+      <h6>You can contact me here:<br> Discord: titanplayz<br>Comments on YT</h6>
     </div>
   </main>
 </body>
+
 </html>

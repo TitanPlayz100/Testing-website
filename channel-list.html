@@ -38,7 +38,7 @@
 
 <template id="channel-template">
   <a :href="data.link" class="channelbox" @vue:mounted="intersection.observe($el); $el.classList.remove('visible')"
-    :class="data.name.includes(filter) ? 'visible':'hidden' ">
+    :class="data.name.toLowerCase().includes(filter.toLowerCase()) ? 'visible':'hidden' ">
     <div style="display: flex; align-items: center; gap: 1vw; padding: 0.5vmin; width: 100%;" class="show">
       <img class="channelimg" :src="data.pfp" style="height: 5vh; border-radius: 3vh;" />
       <p class="channelname">{{data.name}}</p>
