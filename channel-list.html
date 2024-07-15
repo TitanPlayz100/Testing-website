@@ -30,6 +30,8 @@
     return {
       $template: '#channel-template',
       data: props.data,
+      shouldShow: (filter) => props.data.name.toLowerCase().includes(filter.toLowerCase()),
+      mount: (el) => { intersection.observe(el); el.classList.remove('visible') }
     }
   }
 
@@ -37,13 +39,12 @@
 </script>
 
 <template id="channel-template">
-  <a :href="data.link" class="channelbox" @vue:mounted="intersection.observe($el); $el.classList.remove('visible')"
-    :class="data.name.toLowerCase().includes(filter.toLowerCase()) ? 'visible':'hidden' ">
-    <div style="display: flex; align-items: center; gap: 1vw; padding: 0.5vmin; width: 100%;" class="show">
-      <img class="channelimg" :src="data.pfp" style="height: 5vh; border-radius: 3vh;" />
+  <a :href="data.link" class="channelbox" @vue:mounted="mount($el)" :class="shouldShow(filter) ? 'visible':'hidden' ">
+    <div class="show channelNameIcon">
+      <img class="channelimg" loading="lazy" :src="data.pfp" />
       <p class="channelname">{{data.name}}</p>
     </div>
-    <p class="channeldescription" style="margin-left: 4vw;">{{data.desc}}</p>
+    <p class="channeldescription">{{data.desc}}</p>
   </a>
 </template>
 
@@ -53,7 +54,7 @@
       <h1>CHANNELS</h1>
       <p>Have a look through all these great channels, most who post tetris content just like me!<br>DM me if u don't
         see a channel u wanted</p>
-      <input type="text" v-scope v-model="filter" id="myInput" placeholder="Search for channels..">
+      <input type="text" v-scope v-model="filter" id="input" placeholder="Search for channels..">
       <hr>
     </div>
     <div class="webbox_parent_yt" id="channel-container">

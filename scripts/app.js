@@ -1,49 +1,30 @@
-
 // adds blur to scrolling
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
-        }
-    });
-});
+const observer = new IntersectionObserver(entries =>
+  entries.forEach(entry =>
+    entry.isIntersecting
+      ? entry.target.classList.add('visible')
+      : entry.target.classList.remove('visible')
+  )
+);
 
-const hiddenElements = document.querySelectorAll('div');
+document.getElementsByTagName('div').forEach(el => observer.observe(el))
 
-hiddenElements.forEach((el) => {
-    observer.observe(el);
-});
+// smooth scrolling
+function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }) }
 
 // minimises top navbar on scroll
-window.onscroll = function() {scrollFunction()};
-
-
-function scrollFunction() {
-  if (window.innerWidth > 1000) {
-    if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
-      document.getElementsByClassName("navbar")[0].style.padding = "0vw 10vw";
-      document.getElementsByClassName("navtext")[0].style.fontSize = "1.5vw";
-      document.getElementsByClassName("navimg")[0].style.width = "3vw";
-    } else {
-      document.getElementsByClassName("navbar")[0].style.padding = "2vw 20vw";
-      document.getElementsByClassName("navtext")[0].style.fontSize = "2.5vw";
-      document.getElementsByClassName("navimg")[0].style.width = "4vw";
-    }
-  } else {
-      document.getElementsByClassName("navbar")[0].style.padding = "";
-      document.getElementsByClassName("navtext")[0].style.fontSize = "";
-      document.getElementsByClassName("navimg")[0].style.width = "";
-  }
-  
+window.onscroll = () => {
+  const cond1 = innerWidth > 1000, cond2 = document.body.scrollTop > 90
+  document.getElementById("navbar").style.padding = cond1 ? cond2 ? "0vw 10vw" : "2vw 20vw" : "";
+  document.getElementById("navtext").style.fontSize = cond1 ? cond2 ? "1.5vw" : "2.5vw" : "";
+  document.getElementById("navimg").style.width = cond1 ? cond2 ? "3vw" : "4vw" : "";
 }
 
 // navbar
 var navbarItems = `
-<nav class="navbar">
+<nav class="navbar" id="navbar">
   <ul>
-    <li><img src="assets/logo.png" class="navimg"></li>
+    <li><img src="assets/logo.png" class="navimg" id="navimg"></li>
     <li><strong><a class="navtext" href="https://titanplayz100.github.io/">TitanPlayz's
           Website</a></strong></li>
   </ul>
@@ -54,19 +35,14 @@ var navbarItems = `
   </ul>
 </nav>
 `
-document.getElementsByClassName("container")[0].insertAdjacentHTML("beforebegin", navbarItems);
+document.getElementsByTagName("main").insertAdjacentHTML("beforebegin", navbarItems);
 
 // footer
 var footerItems = `
-<div class="footer show">
+<div class="footer show" id="footer">
   <center>
     <a href="" role="button" class="secondary outline" onclick="scrollToTop();return false">Back to top</a>
   </center>
 </div>
 `
-document.getElementsByClassName("container")[0].insertAdjacentHTML("afterend", footerItems);
-
-// smooth scrolling
-function scrollToTop() {
-  window.scrollTo({top: 0, behavior: 'smooth'});
-}
+document.getElementsByTagName("main").insertAdjacentHTML("afterend", footerItems);

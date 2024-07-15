@@ -1,11 +1,11 @@
 body {
     background-color: #373940;
-    padding-top: 25vh;
+    padding-top: 20vh;
 }
 
 @media screen and (max-width: 1000px) {
     main {
-        margin-top: 15vw;
+        margin-top: 13vw;
     }
     .hide_on_mobile {
         display: none;
@@ -112,6 +112,13 @@ div {
     flex-direction: column;
     min-width: 98vw;
     align-items: center;
+}
+#ytThumbsPlayer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    aspect-ratio: 16 / 9;
+    width: 100%;
 }
 
 @media screen and (max-width:1000px) {

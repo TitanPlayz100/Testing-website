@@ -2,9 +2,9 @@
     background-color: #212325;
     padding: 20px;
     border-radius: 25px;
-    height:auto;
-    width:90%;
-    margin:1%;
+    height: auto;
+    width: 90%;
+    margin: 1%;
     display: block;
     overflow: hidden;
     text-decoration: none;
@@ -12,13 +12,16 @@
     opacity: 0;
     transform: translateX(0px);
 }
+
 .channelbox:hover {
     background-color: #121314;
 }
+
 .visible {
     opacity: 1;
     transform: translateX(50px);
 }
+
 .hidden {
     opacity: 0;
     transform: translateX(0px);
@@ -26,24 +29,37 @@
     height: 0;
     margin: 0;
     padding: 0;
-    /* position: absolute; */
 }
+
 .channelname {
-    font-size:x-large;
+    font-size: x-large;
     font-weight: bolder;
     color: #ffffff;
     margin: 0%;
 }
+
 .channeldescription {
-    font-size:medium;
+    font-size: medium;
     color: #ffffff80;
     margin: 0%;
+    margin-left: 4vw;
 }
-#myInput {
+
+#input {
     background-color: #212325;
     padding: 15px;
     border-radius: 15px;
-    height:auto;
-    width:90%;
-    margin:1%;
+}
+
+.channelimg {
+    height: 5vh;
+    border-radius: 3vh;
+}
+
+.channelNameIcon {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    padding: 0.5vmin;
+    width: 100%;
 }
