@@ -23,9 +23,9 @@
     { title: 'GUIDES', description: 'Explore the videos and guides I have made', link: 'guides-list.html', image: 'assets/sdpc.png', imgid: 'img1' },
     { title: 'RESOURCES', description: 'Many tetris resources', link: 'resources-list.html', image: 'assets/resource-collection.png', imgid: 'img2' },
     { title: 'ABOUT ME', description: 'View my accomplishments and projects', link: 'about-me.html', image: 'assets/logo.png', imgid: 'img3' },
-    { title: 'DC SERVERS', description: 'Cool places to hang out', link: 'dc-servers-list.html', image: 'assets/discord.png', imgid: 'img4' },
+    { title: 'TETRIS SERVERS', description: 'Cool places to hang out', link: 'dc-servers-list.html', image: 'assets/discord.png', imgid: 'img4' },
     { title: 'GITHUB', description: 'View my github profile', link: 'https://github.com/TitanPlayz100', image: 'assets/github.png', imgid: 'img5' },
-    { title: 'OTHER CHANNELS', description: 'A list of cool people on YT', link: 'channel-list.html', image: 'assets/default user.png', imgid: 'img6' },
+    { title: 'TETRIO CHANNELS', description: 'A list of cool people on YT', link: 'channel-list.html', image: 'assets/default user.png', imgid: 'img6' },
   ]
 
   function Box(props) {
@@ -36,10 +36,10 @@
 </script>
 
 <template id="box-template">
-  <a :href="data.link" class="contrast">
+  <a :href="data.link" class="contrast" style="text-decoration: none;">
     <div class="box" @vue:mounted="observer.observe($el)">
       <img :src="data.image" :id="data.imgid">
-      <p><strong>{{data.title}}</strong></p>
+      <p style="font-size: 1.6em;"><strong>{{data.title}}</strong></p>
       <p>{{data.description}}</p>
     </div>
   </a>
@@ -48,7 +48,7 @@
 <body>
   <main class="container centered">
     <h1>Hi! I'm TitanPlayz</h1>
-    <h4>Welcome To My Website!</h4>
+    <h4 style="padding-bottom: 5vw;">Welcome To My Website!</h4>
 
     <div class="grid" style="width: 80vw;">
       <div v-scope="Box(box_data[0])"></div>

@@ -12,9 +12,8 @@ body {
     }
 }
 
-
 /* navbar and footer css */
-.navbar {
+#navbar {
     padding: 2vw 20vw;
     background-color: #222427; 
     transition: all 0.4s ease;
@@ -23,21 +22,24 @@ body {
     top: 0;
     z-index: 99;
 }
-.navimg {
-    height: auto; 
+#navimg {
     width: 4vw;
     transition: all 0.4s ease;
 }
-.navtext {
+#navtext {
     font-size: 2.5vw; 
     color: white;
+    font-weight: bold;
     transition: all 0.4s ease;
 }
-.footer {
+#footer {
     padding: 2vw;
     background-color: #222427; 
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 }
-.contrast {
+#navbar > ul > li > .contrast {
     font-size: 1.3vw;
 }
 
