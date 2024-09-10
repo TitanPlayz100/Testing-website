@@ -67,7 +67,7 @@ div {
 }
 
 /* boxes with content */
-.webbox_parent, .webbox_parent_yt {
+.webbox_parent_yt {
     width: 110%;
     height: fit-content;
     overflow: hidden;
@@ -78,23 +78,21 @@ div {
     .webbox_parent_yt {
         transform: translateX(-10%);
     }
-    .webbox_parent {
-        margin: 1vw;
-        width: 100%
-    }
 }
 
 .webbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #212325;
-    padding: 1.5vw;
-    border-radius: 20px;
-    height:auto;
-    width:48%;
-    margin:1%;
+    padding: 1vw;
+    border-radius: 2vmin;
+    height:fit-content;
+    width:100%;
+    margin:1vh;
     transition: 0.3s;
-    position: relative;
     transition: all 0.4s;
-    float: left;
+    overflow: hidden;
 }
 .webbox:hover {
     background-color: #121314;
@@ -102,11 +100,13 @@ div {
 
 .webtext,.webtext_small {
     text-decoration: none;
-    font-size: 27px;
+    font-size: 1.2em;
     color:#e6e6e6;
+    margin-bottom: 0.1vh;
 }
 .webtext_small {
-    font-size:1.2vw;
+    font-size:0.7em;
+    text-align: right;
 }
 .centered {
     text-align: center;

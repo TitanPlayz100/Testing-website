@@ -8,349 +8,47 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="shortcut icon" href="assets/logo.png">
   <title>Resources - TitanPlayz</title>
-  <script defer src="scripts/app.js"></script>
 </head>
+
+<script type="module">
+  import { createApp, reactive } from 'https://unpkg.com/petite-vue?module'
+  import Resource_Data from './scripts/resources.json' with { type: "json" };
+  const resourceData = reactive(Resource_Data);
+
+  function Resource(props) {
+    return { $template: '#resource-template', data: props }
+  }
+
+  function ResourceGroup(props) {
+    return { $template: '#resourcegroup-template', data: props }
+  }
+
+  createApp({ Resource, ResourceGroup, resourceData }).mount()
+</script>
+<script defer src="scripts/app.js"></script>
+
+<template id="resource-template">
+    <a :href="data.url" class="webtext">
+      <div class="webbox">
+        <p class="webtext"><strong>{{data.title}}</strong></p>
+        <p class="webtext_small">{{data.desc}}</p>
+      </div>
+    </a>
+  
+</template>
+
+<template id="resourcegroup-template">
+  <h2>{{data.name}}</h2>
+  <div v-scope="Resource(resource)" v-for="(resource, index) in data.items" :key="index" class="show"></div>
+  <h1></h1>
+  <hr>
+</template>
 
 <body>
   <main class="container">
     <h1>RESOURCES</h1>
     <hr>
-    <h2>General Guides</h2>
-
-    <div class="webbox_parent">
-      <a href="https://four.lol/" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>four.lol</strong></p>
-          <p class="webtext_small">Many openers and setups in a clean website</p>
-        </div>
-      </a>
-      <a href="https://harddrop.com/wiki/Tetris_Wiki" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>harddrop</strong></p>
-          <p class="webtext_small">A full tetris wiki with many techniques and setups</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="webbox_parent">
-      <a href="https://user670.github.io/tetris-trainer-tres-bien/" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>Tetris trainer</strong></p>
-          <p class="webtext_small">Starts from the fundamentals teaching many useful tetris concepts</p>
-        </div>
-      </a>
-      <a href="https://galactoidtetris.wordpress.com/" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>Galactoids guides</strong></p>
-          <p class="webtext_small">Many guides with more advanced concepts, very broad topics</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="webbox_parent">
-      <a href="https://harddrop.com/fumen/" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>Fumen</strong></p>
-          <p class="webtext_small">Represent boardstates and share with others easily</p>
-        </div>
-      </a>
-      <a href="https://www.tetrisconcept.com/p/start.html" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>tetrisconcept</strong></p>
-          <p class="webtext_small">Fundamental concepts for beginnners</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="webbox_parent">
-      <a href="https://docs.google.com/document/d/1MzYFIktbYL9zUVB4HjLGFJeABQoxFB_kk7hbF1tIKVc/edit?usp=sharing" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>Upstacking guide</strong></p>
-          <p class="webtext_small">patterns that are useful when stacking</p>
-        </div>
-      </a>
-      <a href="https://docs.google.com/document/d/1_6NPZjWk6L9n5iDbmuBbWSF4bCgWHh9DX1ss_grX3-w/edit?usp=sharing" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>mLurkers Guides</strong></p>
-          <p class="webtext_small">Collection of high quality guides for various setups</p>
-        </div>
-      </a>
-    </div>
-    <h1></h1>
-    <hr>
-
-    <h2>Perfect Clears</h2>
-    <div class="webbox_parent">
-      <a href="https://teatube.cn/ttpc/ttpc/" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>Interactive PCO challanges</strong></p>
-          <p class="webtext_small">Many challanges to practice and learn PCO knowledge</p>
-        </div>
-      </a>
-      <a href="https://tetris.johnbeak.cz/" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>johnbeak DPC</strong></p>
-          <p class="webtext_small">A full database on different dpc setups</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="webbox_parent">
-      <a href="https://torchlight.github.io/tetnotes/second-pc.html#the-itsz-setup" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>Torchlight 2nd PC</strong></p>
-          <p class="webtext_small">A full 2nd PC guide</p>
-        </div>
-      </a>
-      <a href="https://docs.google.com/document/d/17ABWvCDruGB1P92wPqp8NIPmqJJoEIS0Vfh4RSGms8w/edit#heading=h.19yve9457pp0" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>2nd PC Doc</strong></p>
-          <p class="webtext_small">Mainly focused on good saves and setups</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="webbox_parent">
-      <a href="https://github.com/knewjade/sfinder-cpp" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>sfinder</strong></p>
-          <p class="webtext_small">Strongest (and a bit confusing) tool to find pc setups</p>
-        </div>
-      </a>
-      <a href="https://himitsuconfidential.github.io/downstack-practice/usermode.html" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>Usermode Practice</strong></p>
-          <p class="webtext_small">PC practice tool for custom situations</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="webbox_parent">
-      <a href="https://docs.google.com/document/d/1-E8L7N92MicoW3ZDN4-IILYKHiXiu9ukBN1D9uSLfKs/edit#heading=h.5tdb6n92j1cu"
-        class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>Hosef's Usermode</strong></p>
-          <p class="webtext_small">Doc with links to many practice usermodes</p>
-        </div>
-      </a>
-      <a href="https://wirelyre.github.io/tetra-tools/pc-solver.html" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>Wirelyre PC solver</strong></p>
-          <p class="webtext_small">Simple web based PC solver</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="webbox_parent">
-      <a href="https://docs.google.com/document/d/13EGXMdc4s_zRhp9VFD7Wq8VhLhAj_6MA4Cge0pvo0m8/edit?usp=sharing"
-        class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>Jigsaw PC</strong></p>
-          <p class="webtext_small">mLurkers doc with guide to jigsaw setups</p>
-        </div>
-      </a>
-      <a href="https://docs.google.com/spreadsheets/d/1m3UuLBypp2bj4F4KBfm6UmBnfR9SwFqq5FlRnpe0e4A/edit?usp=sharing" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>SDPC aid</strong></p>
-          <p class="webtext_small">Guide to SDPC</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="webbox_parent">
-      <a href="https://docs.google.com/document/d/19NgsSMKfbu57xu2DPPEr2APZHXxbnufIa2xI6tBT7Vo/edit#heading=h.quhf8ut3k18y"
-        class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>PC Glossary</strong></p>
-          <p class="webtext_small">Common setups and freestyling tips</p>
-        </div>
-      </a>
-      <a href="https://docs.google.com/presentation/d/1pn09RCc2ZN25_wWkcQj7eaTlMW6Uow9bLThS9VJgAP0/edit?usp=drive_link"
-        class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>Minimal DPC guide</strong></p>
-          <p class="webtext_small">mLurkers slides to learn DPC as fast as possible</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="webbox_parent">
-      <a href="https://sites.google.com/view/perfect-clear-info/more/toolsresources" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>PC finders</strong></p>
-          <p class="webtext_small">Another website with many pc finding tools</p>
-        </div>
-      </a>
-    </div>
-
-
-    <h1></h1>
-    <hr>
-
-    <h2>T-Spins</h2>
-    <div class="webbox_parent">
-      <a href="https://swng.github.io/twowide/" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>twowide</strong></p>
-          <p class="webtext_small">Many challanges to test tspin knowledge</p>
-        </div>
-      </a>
-      <a href="https://eight04.github.io/fancy-t-spin/" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>fancy-t-spins</strong></p>
-          <p class="webtext_small">Many tspin setups that may or may not be practical</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="webbox_parent">
-      <a href="https://sites.google.com/view/aicy-club/articles" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>AICY club</strong></p>
-          <p class="webtext_small">impractical tspin and opener setups :\</p>
-        </div>
-      </a>
-    </div>
-
-    <h1></h1>
-    <hr>
-
-    <h2>Web clients and trainers</h2>
-
-    <div class="webbox_parent">
-      <a href="https://tetr.io" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>TETR.IO</strong></p>
-          <p class="webtext_small">teto</p>
-        </div>
-      </a>
-      <a href="https://himitsuconfidential.github.io/downstack-practice/" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>himitsuconfidential's practice tool</strong></p>
-          <p class="webtext_small">A top tier practice tool with many modes to play</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="webbox_parent">
-      <a href="https://jstris.jezevec10.com" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>JSTRIS</strong></p>
-          <p class="webtext_small">Another more simpler client for multiplayer</p>
-        </div>
-      </a>
-      <a href="https://ddrkirby.com/games/4-wide-trainer/4-wide-trainer.html" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>4W trainer</strong></p>
-          <p class="webtext_small">trains 4w...</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="webbox_parent">
-      <a href="https://simon.lc/tetr.js/" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>tetr.js</strong></p>
-          <p class="webtext_small">Extremely simple client with minimal modes, very fast</p>
-        </div>
-      </a>
-      <a href="https://tetralegends.app" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>tetra legend</strong></p>
-          <p class="webtext_small">Another very stylistic client</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="webbox_parent">
-      <a href="https://blox.askplays.com" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>blox</strong></p>
-          <p class="webtext_small">It has a very useful opener trainer section</p>
-        </div>
-      </a>
-      <a href="https://tetresse.harddrop.com/" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>tetresse</strong></p>
-          <p class="webtext_small">Very simple finesse trainer for beginnners</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="webbox_parent">
-      <a href="https://swng.github.io/zztetris/" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>zztetris</strong></p>
-          <p class="webtext_small">easily find by typing zz, made by swng</p>
-        </div>
-      </a>
-    </div>
-
-    <h1></h1>
-    <hr>
-
-    <h2>Miscellaneous</h2>
-
-    <div class="webbox_parent">
-      <a href="https://docs.google.com/document/d/1rwI5Uww5AygrF3QSBm0o6hqTG1X8P2cRsJaBjYFMzDg/pub" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>Ivan's Opener database</strong></p>
-          <p class="webtext_small">400+ openers, has everything!</p>
-        </div>
-      </a>
-      <a href="https://swng.github.io/opener_db/" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>SWNG's Opener database lookup</strong></p>
-          <p class="webtext_small">Clean interface to find openers from the opener database</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="webbox_parent">
-      <a href="https://docs.google.com/document/d/1WTfyxoqsnejrUABjMbwCz9iKtGis92GhyeTUBQAsEaQ/edit" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>Secret Grade Doc</strong></p>
-          <p class="webtext_small">Everything needed to achieve the Secret grade badge</p>
-        </div>
-      </a>
-      <a href="https://flyspeck101.github.io/how-to-win-tl/" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>How to win in tl</strong></p>
-          <p class="webtext_small">funny</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="webbox_parent">
-      <a href="https://tetrio.team2xh.net" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>TETR.IO Statistics old</strong></p>
-          <p class="webtext_small">stats for individual players as well as all players together</p>
-        </div>
-      </a>
-      <a href="https://ts.dan63.by" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>Dan63 TETR.IO statistics</strong></p>
-          <p class="webtext_small">extremely fast stat fetching</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="webbox_parent">
-      <a href="https://docs.google.com/document/d/1FC06ss8PveUw-66UAXl8MrdIUmO0FgewQWYKBz5izSI/edit#heading=h.pi859y6vmv81" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>Substitute</strong></p>
-          <p class="webtext_small">An alternate opener that is similar to SDPC-spin</p>
-        </div>
-      </a>
-      <a href="https://docs.google.com/document/d/1K5-JR4rFYpG5EZmKuLbTzOszO-k5F3ckH2Y6lRo_IZ4/edit?usp=sharing" class="webtext">
-        <div class="webbox">
-          <p class="webtext"><strong>Doc of Galactiod Guides</strong></p>
-          <p class="webtext_small">My attempt at condensation of galactiods guides</p>
-        </div>
-      </a>
-      
-    </div>
+    <div v-scope="ResourceGroup({ name: group, items: resources })" v-for="(resources, group) in resourceData" :key="group" class="show"></div>
   </main>
 </body>
 

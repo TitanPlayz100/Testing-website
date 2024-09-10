@@ -1,0 +1,301 @@
+{
+    "General": [
+        {
+            "title": "four.lol",
+            "desc": "Many openers and setups in a clean website",
+            "url": "https://four.lol/"
+        },
+        {
+            "title": "harddrop",
+            "desc": "A full tetris wiki with many techniques and setups",
+            "url": "https://harddrop.com/wiki/Tetris_Wiki"
+        },
+        {
+            "title": "Dan63 TETR.IO statistics",
+            "desc": "Many stats and extremely fast stat fetching",
+            "url": "https://ts.dan63.by"
+        },
+        {
+            "title": "Galactoids guides",
+            "desc": "Advanced concepts and very broad topics",
+            "url": "https://galactoidtetris.wordpress.com/"
+        },
+        {
+            "title": "Fumen",
+            "desc": "Represent boardstates and share with others easily",
+            "url": "https://harddrop.com/fumen/"
+        },
+        {
+            "title": "mLurkers Guides",
+            "desc": "Collection of high quality guides for various setups",
+            "url": "https://docs.google.com/document/d/1_6NPZjWk6L9n5iDbmuBbWSF4bCgWHh9DX1ss_grX3-w/edit?usp=sharing"
+        },
+        {
+            "title": "tetrisconcept",
+            "desc": "Fundamental concepts for beginnners",
+            "url": "https://www.tetrisconcept.com/p/start.html"
+        }
+    ],
+    "Tetris Clients": [
+        {
+            "title": "TETR.IO",
+            "desc": "teto",
+            "url": "https://tetr.io"
+        },
+        {
+            "title": "JSTRIS",
+            "desc": "Another more simpler client for multiplayer",
+            "url": "https://jstris.jezevec10.com"
+        },
+        {
+            "title": "tetr.js",
+            "desc": "Extremely simple client with minimal modes, very fast",
+            "url": "https://simon.lc/tetr.js/"
+        },
+        {
+            "title": "tetra legend",
+            "desc": "Another very stylistic client",
+            "url": "https://tetralegends.app"
+        },
+        {
+            "title": "zztetris",
+            "desc": "Easily find by typing zz, made by swng",
+            "url": "https://swng.github.io/zztetris/"
+        },
+        {
+            "title":"Spentris",
+            "desc":"has many custom training maps",
+            "url":"https://spentine.github.io/Block-Stacker/init"
+        },
+        {
+            "title":"Strangenix's Blocks",
+            "desc":"Clean and modern tetris client (inspiring ;) )",
+            "url":"https://strangelinx.github.io/blocks/"
+        },
+        {
+            "title":"Blueprint",
+            "desc":"Draw and edit board to better analyse them like fourtris",
+            "url":"https://bp.tali.software/"
+        },
+        {
+            "title":"Teti",
+            "desc":"My own tetris client, with many modern and useful features",
+            "url":"https://titanplayz100.github.io/teti/"
+        }
+    ],
+    "Training Sites": [
+        {
+            "title": "himitsuconfidential's practice tool",
+            "desc": "A top tier practice tool with many modes to play",
+            "url": "https://himitsuconfidential.github.io/downstack-practice/"
+        },
+        {
+            "title": "Usermode Practice",
+            "desc": "PC practice tool for custom situations",
+            "url": "https://himitsuconfidential.github.io/downstack-practice/usermode.html"
+        },
+        {
+            "title": "4W trainer",
+            "desc": "Trains 4w...",
+            "url": "https://ddrkirby.com/games/4-wide-trainer/4-wide-trainer.html"
+        },
+        {
+            "title": "blox",
+            "desc": "Opener practice with overlays",
+            "url": "https://blox.askplays.com"
+        },
+        {
+            "title": "tetresse",
+            "desc": "Very simple finesse trainer for beginnners",
+            "url": "https://tetresse.harddrop.com/"
+        },
+        {
+            "title": "Interactive PCO challanges",
+            "desc": "Many challanges to practice and learn PCO knowledge",
+            "url": "https://teatube.cn/ttpc/ttpc/"
+        },
+        {
+            "title": "Tetris trainer",
+            "desc": "Starts from the fundamentals teaching many useful tetris concepts",
+            "url": "https://user670.github.io/tetris-trainer-tres-bien/"
+        }
+    ],
+    "Openers": [
+        {
+            "title": "Ivan's Opener database",
+            "desc": "400+ openers, has everything!",
+            "url": "https://docs.google.com/document/d/1rwI5Uww5AygrF3QSBm0o6hqTG1X8P2cRsJaBjYFMzDg/pub"
+        },
+        {
+            "title": "SWNG's Opener database lookup",
+            "desc": "Clean interface to find openers from the opener database",
+            "url": "https://swng.github.io/opener_db/"
+        },
+        {
+            "title": "SDPC aid",
+            "desc": "Guide to SDPC",
+            "url": "https://docs.google.com/spreadsheets/d/1m3UuLBypp2bj4F4KBfm6UmBnfR9SwFqq5FlRnpe0e4A/edit?usp=sharing"
+        },
+        {
+            "title": "Substitute",
+            "desc": "An alternate opener that is similar to SDPC-spin",
+            "url": "https://docs.google.com/document/d/1FC06ss8PveUw-66UAXl8MrdIUmO0FgewQWYKBz5izSI/edit#heading=h.pi859y6vmv81"
+        },
+        {
+            "title":"Toothpaste cone",
+            "desc":"By FSP",
+            "url":"https://docs.google.com/document/d/1w1TzrXnLAQ9CkY-jbt8nGjjRgjOSKHfDqALV5EmZ0II/edit?usp=sharing"
+        },
+        {
+            "title":"FSP's Opener List",
+            "desc":"Bunch of interesting openers",
+            "url":"https://bit.ly/fsps-openers"
+        },
+        {
+            "title":"Copener Gaming",
+            "desc":"Place dedicated to setup research",
+            "url":"https://docs.google.com/document/d/1dFQ_vhxDRH0CJBSoDi_XWj5ZNUdBnAf0YqC4OifNPi0/edit"
+        }
+    ],
+    "Perfect Clears": [
+        {
+            "title": "Torchlight 2nd PC",
+            "desc": "A full 2nd PC guide",
+            "url": "https://torchlight.github.io/tetnotes/second-pc.html#the-itsz-setup"
+        },
+        {
+            "title": "2nd PC Doc",
+            "desc": "Mainly focused on good saves and setups",
+            "url": "https://docs.google.com/document/d/17ABWvCDruGB1P92wPqp8NIPmqJJoEIS0Vfh4RSGms8w/edit#heading=h.19yve9457pp0"
+        },
+        {
+            "title": "Hosef's Usermode",
+            "desc": "Doc with links to many practice usermodes",
+            "url": "https://docs.google.com/document/d/1-E8L7N92MicoW3ZDN4-IILYKHiXiu9ukBN1D9uSLfKs/edit#heading=h.5tdb6n92j1cu"
+        },
+        {
+            "title": "Jigsaw PC",
+            "desc": "mLurkers doc with guide to jigsaw setups",
+            "url": "https://docs.google.com/document/d/13EGXMdc4s_zRhp9VFD7Wq8VhLhAj_6MA4Cge0pvo0m8/edit?usp=sharing"
+        },
+        {
+            "title": "Minimal DPC guide",
+            "desc": "mLurkers slides to learn DPC as fast as possible",
+            "url": "https://docs.google.com/presentation/d/1pn09RCc2ZN25_wWkcQj7eaTlMW6Uow9bLThS9VJgAP0/edit?usp=drive_link"
+        },
+        {
+            "title": "PC Glossary",
+            "desc": "Common setups and freestyling tips",
+            "url": "https://docs.google.com/document/d/19NgsSMKfbu57xu2DPPEr2APZHXxbnufIa2xI6tBT7Vo/edit#heading=h.quhf8ut3k18y"
+        },
+        {
+            "title": "Johnbeak DPC",
+            "desc": "A full database on different dpc setups",
+            "url": "https://tetris.johnbeak.cz/"
+        }
+    ],
+    "Perfect Clear Finders": [
+        {
+            "title": "sfinder",
+            "desc": "Strongest (and a bit confusing) tool to find pc setups",
+            "url": "https://github.com/knewjade/sfinder-cpp"
+        },
+        {
+            "title": "Wirelyre PC solver",
+            "desc": "Simple web based PC solver",
+            "url": "https://wirelyre.github.io/tetra-tools/pc-solver.html"
+        },
+        {
+            "title": "PC finders",
+            "desc": "Another website with many pc finding tools",
+            "url": "https://sites.google.com/view/perfect-clear-info/more/toolsresources"
+        }
+    ],
+    "Tspins": [
+        {
+            "title": "twowide",
+            "desc": "Many challanges to test tspin knowledge",
+            "url": "https://swng.github.io/twowide/"
+        },
+        {
+            "title": "fancy-t-spins",
+            "desc": "Tspin setups that may or may not be practical",
+            "url": "https://eight04.github.io/fancy-t-spin/"
+        },
+        {
+            "title": "AICY club",
+            "desc": "Impractical tspin and opener setups :/",
+            "url": "https://sites.google.com/view/aicy-club/articles"
+        },
+        {
+            "title":"Galactoids advanced setups",
+            "desc":"Advanced tpsin setups guide",
+            "url":"https://galactoidtetris.wordpress.com/2024/08/05/advanced-hybrid-all-spins-t-spins-setups/"
+        }
+    ],
+    "Docs": [
+        {
+            "title": "Secret Grade Doc",
+            "desc": "Everything needed to achieve the Secret grade badge",
+            "url": "https://docs.google.com/document/d/1WTfyxoqsnejrUABjMbwCz9iKtGis92GhyeTUBQAsEaQ/edit"
+        },
+        {
+            "title": "Doc of Galactiod Guides",
+            "desc": "My attempt at condensation of galactiods guides",
+            "url": "https://docs.google.com/document/d/1K5-JR4rFYpG5EZmKuLbTzOszO-k5F3ckH2Y6lRo_IZ4/edit?usp=sharing"
+        },
+        {
+            "title": "Upstacking guide",
+            "desc": "Patterns that are useful when stacking",
+            "url": "https://docs.google.com/document/d/1MzYFIktbYL9zUVB4HjLGFJeABQoxFB_kk7hbF1tIKVc/edit?usp=sharing"
+        },
+        {
+            "title":"Spinnies",
+            "desc":"Extensive guide for allspins",
+            "url":"https://docs.google.com/document/d/1fBvaaUn60HDXchr9ILEtA6T5QdcnjUJQ-SSNzhW6ZSU/edit "
+        },
+        {
+            "title":"6-3 Guide",
+            "desc":"6-3 stacking tutorial for different tetris skill levels",
+            "url":"https://docs.google.com/document/d/131_5oB3Mxru0Swt5V_cEoU1ghUv8pHhBASY0q8B_YLw/edit#heading=h.ekp0ym85xsu4"
+        },
+        {
+            "title":"LST guide",
+            "desc":"Page containing fundamentals of LST",
+            "url":"https://github.com/strawberrymilk1134/tetris-tutorials/blob/main/LST-tutorial.md"
+        }
+        
+    ],
+    "Miscellaneous": [
+        {
+            "title": "How to win in tl",
+            "desc": "funny",
+            "url": "https://flyspeck101.github.io/how-to-win-tl/"
+        },
+        {
+            "title": "Tenchi Stats (no longer maintained)",
+            "desc": "Stats for players, shut down",
+            "url": "https://tetrio.team2xh.net"
+        },
+        {
+            "title": "O spin Guide",
+            "desc": "Guide for o spins",
+            "url": "https://dunspixel.github.io/ospin-guide/"
+        },
+        {
+            "title":"General Coaching Advice",
+            "desc":"Good pointers for analysing games",
+            "url":"https://lukasdrakon.github.io/uc-coaching-response/"
+        },
+        {
+            "title":"Hsterts' Docs",
+            "desc":"Collection of useful pages",
+            "url":"https://hsterts.github.io/h-docs/"
+        },
+        {
+            "title":"Config Displayer",
+            "desc":"Show keybinds on a coloured keyboard using config",
+            "url":"https://github.com/Katamithetaka/Config-Displayer-For-TETR.IO"
+        }
+    ]
+}
