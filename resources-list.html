@@ -40,8 +40,6 @@
 <template id="resourcegroup-template">
   <h2>{{data.name}}</h2>
   <div v-scope="Resource(resource)" v-for="(resource, index) in data.items" :key="index" class="show"></div>
-  <h1></h1>
-  <hr>
 </template>
 
 <body>
@@ -49,7 +47,7 @@
     <h1>RESOURCES</h1>
     <hr>
     <p>This is a personal list of resources. <br> Work in progress, and many things may be wrong.</p>
-    <div v-scope="ResourceGroup({ name: group, items: resources })" v-for="(resources, group) in resourceData" :key="group" class="show"></div>
+    <div v-scope="ResourceGroup({ name: group, items: resources })" v-for="(resources, group) in resourceData" :key="group" class="show resourcegroup" onclick="this.classList.toggle('resourceopen');"></div>
   </main>
 </body>
 

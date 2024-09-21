@@ -122,6 +122,28 @@ div {
     aspect-ratio: 16 / 9;
     width: 100%;
 }
+.resourcegroup {
+    background-color: rgb(73, 72, 82);
+    padding: 2vmin;
+    border-radius: 2vmin;
+    overflow: hidden;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    height: 10vh;
+}
+.resourcegroup:hover {
+    background-color: rgb(44, 44, 48);
+}
+.resourceopen {
+    height: auto;
+    animation: jump 0.1s ease-in-out;
+}
+
+@keyframes jump {
+    0%   {transform: translateY(0);}
+    50%  {transform: translateY(0.5%);}
+    100% {transform: translateY(0);}
+}
 
 @media screen and (max-width:1000px) {
     .webtext_small {

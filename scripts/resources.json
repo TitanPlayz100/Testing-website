@@ -1,22 +1,22 @@
 {
     "General": [
         {
-            "title": "four.lol",
+            "title": "Fourlol",
             "desc": "Many openers and setups in a clean website",
             "url": "https://four.lol/"
         },
         {
-            "title": "harddrop",
+            "title": "Harddrop Wiki",
             "desc": "A full tetris wiki with many techniques and setups",
             "url": "https://harddrop.com/wiki/Tetris_Wiki"
         },
         {
-            "title": "Dan63 TETR.IO statistics",
+            "title": "Dan63's TETR.IO statistics",
             "desc": "Many stats and extremely fast stat fetching",
             "url": "https://ts.dan63.by"
         },
         {
-            "title": "Galactoids guides",
+            "title": "Galactoids Guides",
             "desc": "Advanced concepts and very broad topics",
             "url": "https://galactoidtetris.wordpress.com/"
         },
@@ -27,11 +27,11 @@
         },
         {
             "title": "mLurkers Guides",
-            "desc": "Collection of high quality guides for various setups",
+            "desc": "Collection of various setups",
             "url": "https://docs.google.com/document/d/1_6NPZjWk6L9n5iDbmuBbWSF4bCgWHh9DX1ss_grX3-w/edit?usp=sharing"
         },
         {
-            "title": "tetrisconcept",
+            "title": "Tetrisconcept",
             "desc": "Fundamental concepts for beginnners",
             "url": "https://www.tetrisconcept.com/p/start.html"
         }
@@ -48,23 +48,33 @@
             "url": "https://jstris.jezevec10.com"
         },
         {
-            "title": "tetr.js",
+            "title": "Fourtris",
+            "desc": "Analyse tetris boards by drawing or taking screenshots, and undo/redo",
+            "url": "https://github.com/fiorescarlatto/four-tris"
+        },
+        {
+            "title": "Techmino",
+            "desc": "Many single player modes and bot training, highly polished client",
+            "url": "https://github.com/26F-Studio/Techmino"
+        },
+        {
+            "title": "Tetr.js",
             "desc": "Extremely simple client with minimal modes, very fast",
             "url": "https://simon.lc/tetr.js/"
         },
         {
-            "title": "tetra legend",
+            "title": "Tetra Legends",
             "desc": "Another very stylistic client",
             "url": "https://tetralegends.app"
         },
         {
-            "title": "zztetris",
+            "title": "Zztetris",
             "desc": "Easily find by typing zz, made by swng",
             "url": "https://swng.github.io/zztetris/"
         },
         {
             "title":"Spentris",
-            "desc":"has many custom training maps",
+            "desc":"Many custom training maps",
             "url":"https://spentine.github.io/Block-Stacker/init"
         },
         {
@@ -85,7 +95,7 @@
     ],
     "Training Sites": [
         {
-            "title": "himitsuconfidential's practice tool",
+            "title": "Himitsuconfidential's Practice Tools",
             "desc": "A top tier practice tool with many modes to play",
             "url": "https://himitsuconfidential.github.io/downstack-practice/"
         },
@@ -100,12 +110,12 @@
             "url": "https://ddrkirby.com/games/4-wide-trainer/4-wide-trainer.html"
         },
         {
-            "title": "blox",
+            "title": "Blox",
             "desc": "Opener practice with overlays",
             "url": "https://blox.askplays.com"
         },
         {
-            "title": "tetresse",
+            "title": "Tetresse",
             "desc": "Very simple finesse trainer for beginnners",
             "url": "https://tetresse.harddrop.com/"
         },
@@ -142,7 +152,7 @@
             "url": "https://docs.google.com/document/d/1FC06ss8PveUw-66UAXl8MrdIUmO0FgewQWYKBz5izSI/edit#heading=h.pi859y6vmv81"
         },
         {
-            "title":"Toothpaste cone",
+            "title":"Toothpaste Cone",
             "desc":"By FSP",
             "url":"https://docs.google.com/document/d/1w1TzrXnLAQ9CkY-jbt8nGjjRgjOSKHfDqALV5EmZ0II/edit?usp=sharing"
         },
@@ -180,7 +190,7 @@
         },
         {
             "title": "Minimal DPC guide",
-            "desc": "mLurkers slides to learn DPC as fast as possible",
+            "desc": "MLurkers slides to learn DPC as fast as possible",
             "url": "https://docs.google.com/presentation/d/1pn09RCc2ZN25_wWkcQj7eaTlMW6Uow9bLThS9VJgAP0/edit?usp=drive_link"
         },
         {
@@ -196,9 +206,9 @@
     ],
     "Perfect Clear Finders": [
         {
-            "title": "sfinder",
+            "title": "Sfinder",
             "desc": "Strongest (and a bit confusing) tool to find pc setups",
-            "url": "https://github.com/knewjade/sfinder-cpp"
+            "url": "https://github.com/knewjade/solution-finder"
         },
         {
             "title": "Wirelyre PC solver",
@@ -213,22 +223,17 @@
     ],
     "Tspins": [
         {
-            "title": "twowide",
+            "title": "Twowide",
             "desc": "Many challanges to test tspin knowledge",
-            "url": "https://swng.github.io/twowide/"
+            "url": "https://twowi.de"
         },
         {
-            "title": "fancy-t-spins",
+            "title": "Fancy-t-spins",
             "desc": "Tspin setups that may or may not be practical",
             "url": "https://eight04.github.io/fancy-t-spin/"
         },
         {
-            "title": "AICY club",
-            "desc": "Impractical tspin and opener setups :/",
-            "url": "https://sites.google.com/view/aicy-club/articles"
-        },
-        {
-            "title":"Galactoids advanced setups",
+            "title":"Galactoids Advanced Setups",
             "desc":"Advanced tpsin setups guide",
             "url":"https://galactoidtetris.wordpress.com/2024/08/05/advanced-hybrid-all-spins-t-spins-setups/"
         }
@@ -240,13 +245,8 @@
             "url": "https://docs.google.com/document/d/1WTfyxoqsnejrUABjMbwCz9iKtGis92GhyeTUBQAsEaQ/edit"
         },
         {
-            "title": "Doc of Galactiod Guides",
-            "desc": "My attempt at condensation of galactiods guides",
-            "url": "https://docs.google.com/document/d/1K5-JR4rFYpG5EZmKuLbTzOszO-k5F3ckH2Y6lRo_IZ4/edit?usp=sharing"
-        },
-        {
-            "title": "Upstacking / Stack Volume Doc",
-            "desc": "Uses LST example for how to upstack using volume",
+            "title": "Stack Volume Doc",
+            "desc": "Stack LST using concept of stack volume",
             "url": "https://docs.google.com/document/d/1MzYFIktbYL9zUVB4HjLGFJeABQoxFB_kk7hbF1tIKVc/edit?usp=sharing"
         },
         {
@@ -260,7 +260,7 @@
             "url":"https://docs.google.com/document/d/131_5oB3Mxru0Swt5V_cEoU1ghUv8pHhBASY0q8B_YLw/edit#heading=h.ekp0ym85xsu4"
         },
         {
-            "title":"LST guide",
+            "title":"LST Guide",
             "desc":"Page containing fundamentals of LST",
             "url":"https://github.com/strawberrymilk1134/tetris-tutorials/blob/main/LST-tutorial.md"
         }
@@ -268,20 +268,11 @@
     ],
     "Miscellaneous": [
         {
-            "title": "How to win in tl",
-            "desc": "funny",
-            "url": "https://flyspeck101.github.io/how-to-win-tl/"
-        },
-        {
             "title": "Tenchi Stats (no longer maintained)",
             "desc": "Stats for players, shut down",
             "url": "https://tetrio.team2xh.net"
         },
-        {
-            "title": "O spin Guide",
-            "desc": "Guide for o spins",
-            "url": "https://dunspixel.github.io/ospin-guide/"
-        },
+        
         {
             "title":"General Coaching Advice",
             "desc":"Good pointers for analysing games",
@@ -301,6 +292,23 @@
             "title":"Simplified Jigsaw",
             "desc":"Easiest PC loop using jigsaw",
             "url":"https://torchlight.github.io/tetnotes/simplified-jigsaw"
+        }
+    ],
+    "Memes": [
+        {
+            "title": "AICY Club",
+            "desc": "Impractical tspin and opener setups :/",
+            "url": "https://sites.google.com/view/aicy-club/articles"
+        },
+        {
+            "title": "How to win in tl",
+            "desc": "funny",
+            "url": "https://flyspeck101.github.io/how-to-win-tl/"
+        },
+        {
+            "title": "O spin Guide",
+            "desc": "Guide for o spins",
+            "url": "https://dunspixel.github.io/ospin-guide/"
         }
     ]
 }
