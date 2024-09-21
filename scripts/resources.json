@@ -245,8 +245,8 @@
             "url": "https://docs.google.com/document/d/1K5-JR4rFYpG5EZmKuLbTzOszO-k5F3ckH2Y6lRo_IZ4/edit?usp=sharing"
         },
         {
-            "title": "Upstacking guide",
-            "desc": "Patterns that are useful when stacking",
+            "title": "Upstacking / Stack Volume Doc",
+            "desc": "Uses LST example for how to upstack using volume",
             "url": "https://docs.google.com/document/d/1MzYFIktbYL9zUVB4HjLGFJeABQoxFB_kk7hbF1tIKVc/edit?usp=sharing"
         },
         {
@@ -296,6 +296,11 @@
             "title":"Config Displayer",
             "desc":"Show keybinds on a coloured keyboard using config",
             "url":"https://github.com/Katamithetaka/Config-Displayer-For-TETR.IO"
+        },
+        {
+            "title":"Simplified Jigsaw",
+            "desc":"Easiest PC loop using jigsaw",
+            "url":"https://torchlight.github.io/tetnotes/simplified-jigsaw"
         }
     ]
 }
