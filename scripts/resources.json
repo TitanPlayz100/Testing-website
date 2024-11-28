@@ -34,6 +34,11 @@
             "title": "Tetrisconcept",
             "desc": "Fundamental concepts for beginnners",
             "url": "https://www.tetrisconcept.com/p/start.html"
+        },
+        {
+            "title": "Techmino dictionary",
+            "desc": "Organised dictionary of many tetris terms",
+            "url": "https://26f-studio.github.io/techmino-online-dict/"
         }
     ],
     "Tetris Clients": [
@@ -63,9 +68,19 @@
             "url": "https://simon.lc/tetr.js/"
         },
         {
+            "title": "Tetr.js Enhanced",
+            "desc": "Extension on tetrjs with more gamemodes and leaderboard",
+            "url": "http://farter.cn/tetr.js/"
+        },
+        {
             "title": "Tetra Legends",
             "desc": "Another very stylistic client",
             "url": "https://tetralegends.app"
+        },
+        {
+            "title":"Tetra Legends Ultimate",
+            "desc": "Revival of tetra legends, with vfx and more modes",
+            "url": "https://talon125.github.io"
         },
         {
             "title": "Zztetris",
@@ -125,9 +140,14 @@
             "url": "https://teatube.cn/ttpc/ttpc/"
         },
         {
-            "title": "Tetris trainer",
+            "title": "Tetris trainer tres bien",
             "desc": "Starts from the fundamentals teaching many useful tetris concepts",
             "url": "https://user670.github.io/tetris-trainer-tres-bien/"
+        },
+        {
+            "title": "TPO puzzles",
+            "desc": "Variety of puzzles",
+            "url": "http://47.92.33.38/tpo"
         }
     ],
     "Openers": [
@@ -236,6 +256,11 @@
             "title":"Galactoids Advanced Setups",
             "desc":"Advanced tpsin setups guide",
             "url":"https://galactoidtetris.wordpress.com/2024/08/05/advanced-hybrid-all-spins-t-spins-setups/"
+        },
+        {
+            "title":"LST Checkerboard Imbalance",
+            "desc":"Guide for lst ci",
+            "url":"https://docs.google.com/document/u/0/d/1u4-WvL8dhMsnUhPpjgutBvyY_vTZIvXj70ccidtzLnc"
         }
     ],
     "Docs": [
@@ -257,12 +282,22 @@
         {
             "title":"6-3 Guide",
             "desc":"6-3 stacking tutorial for different tetris skill levels",
-            "url":"https://docs.google.com/document/d/131_5oB3Mxru0Swt5V_cEoU1ghUv8pHhBASY0q8B_YLw/edit#heading=h.ekp0ym85xsu4"
+            "url":"https://docs.google.com/document/d/131_5oB3Mxru0Swt5V_cEoU1ghUv8pHhBASY0q8B_YLw"
         },
         {
             "title":"LST Guide",
             "desc":"Page containing fundamentals of LST",
             "url":"https://github.com/strawberrymilk1134/tetris-tutorials/blob/main/LST-tutorial.md"
+        },
+        {
+            "title":"Rtxile's blitz database",
+            "desc":"The top blitzer's guide to blitz strategy",
+            "url":"docs.google.com/document/d/1-10mFdxSHKsm7G6p_s0jJNupE2Ii_Xjzxl5wpbkbFWs"
+        },
+        {
+            "title":"Zenith tower revive guide",
+            "desc":"setups for completing revive tasks",
+            "url":"https://docs.google.com/document/u/0/d/1oARSS9lBTxZ6pfygFU9MRA7iGHQ22oxyR6CgT6zzRFE"
         }
         
     ],
@@ -292,6 +327,21 @@
             "title":"Simplified Jigsaw",
             "desc":"Easiest PC loop using jigsaw",
             "url":"https://torchlight.github.io/tetnotes/simplified-jigsaw"
+        },
+        {
+            "title":"TETR.IO sfx list",
+            "desc":"Purposes of all the tetrio sfx",
+            "url":"https://docs.google.com/spreadsheets/d/1DYcp_evauL10UHVS6IBNijDX3Jaby9yI1ff3J8mHUoY/edit?gid=0#gid=0"
+        },
+        {
+            "title":"D_00's Finesse trainer",
+            "desc":"Simple and modern finesse trainer",
+            "url":"https://d-002.github.io/finesse/"
+        },
+        {
+            "title":"Jstris guide",
+            "desc":"Teaches fundamentals of multiplayer in jstris, and other useful mechanics",
+            "url":"https://github.com/jezevec10/jstris-guide"
         }
     ],
     "Memes": [
